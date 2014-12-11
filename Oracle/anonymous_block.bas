@@ -61,7 +61,7 @@ private function openConnection(dbUser as string, dbPassword as string, dbName a
 
 error_handler:
   if   err.number = -2147467259 then
-              msgBox("Oracle Fehler beim Öffnen der Datenbankverbindung: " & err.description)
+              msgBox("Oracle error while opening connection: " & err.description)
   else 
               msgBox(err.number & " " & err.description)
   end if
