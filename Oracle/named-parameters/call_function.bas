@@ -14,7 +14,7 @@ sub main(dbUser as string, dbPassword as string, dbName as string) ' {
   set cm.activeConnection = cn
 
   dim retVal as ADODB.parameter
-  dim p_two  as ADOdB.parameter
+  dim p_two  as ADODB.parameter
 
   dim outSize as long: outSize = 1000
 
