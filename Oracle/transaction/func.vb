@@ -33,7 +33,7 @@ end sub ' }
 sub writeDataWithinTransactions() ' {
 
     connWriter.beginTrans
-    insertValue "commited record"
+    insertValue "committed record"
     connWriter.commitTrans
 
     connWriter.beginTrans
@@ -41,7 +41,7 @@ sub writeDataWithinTransactions() ' {
     connWriter.rollbackTrans
 
     connWriter.beginTrans
-    insertValue "commited or rolled back?"
+    insertValue "committed or rolled back?"
 
 end sub ' }
 
